@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalog</title>
+    <!-- Add your CSS link here -->
+</head>
+<body>
+    <header>
+        <h1>Movie Catalog</h1>
+    </header>
+
+    <main>
+        <!-- Search bar -->
+        <div>
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button onclick="searchMovies()">Search</button>
+        </div>
+
+        <!-- Filter options -->
+        <div>
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <!-- Add more genres -->
+            </select>
+            
+            <label for="year">Release Year:</label>
+            <select id="year">
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <!-- Add more years -->
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Star</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Star</option>
+                <!-- Add more ratings -->
+            </select>
+
+            <button onclick="filterMovies()">Apply Filters</button>
+        </div>
+
+        <!-- Movie listing -->
+        <div id="movieList">
+            <!-- Movie posters with titles and release years will be dynamically added here -->
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination">
+            <!-- Pagination links will be dynamically added here -->
+        </div>
+    </main>
+
+    <!-- Movie details modal -->
+    <div id="modal" class="modal">
+        <!-- Modal content with movie details will be dynamically added here -->
+    </div>
+
+    <!-- Add your JavaScript link here -->
+</body>
+</html>
+
